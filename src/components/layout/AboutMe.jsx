@@ -51,7 +51,7 @@ export default function AboutMe() {
       >
         {/* Main image */}
         <motion.img
-          src="https://i.imghippo.com/files/XQ9091RRo.jpg"
+          src="/images/coding.jpg"
           alt="Profile"
           className="rounded-lg shadow-lg object-cover w-full"
           whileHover={{ scale: 1.02 }}
