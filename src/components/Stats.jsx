@@ -4,12 +4,12 @@ import CountUp from "react-countup";
 import { FaBriefcase, FaProjectDiagram, FaSmile, FaCode } from "react-icons/fa";
 
 const stats = [
-  { label: "Years of Learning", value: 1 
-, icon: <FaBriefcase className="text-yellow-500" /> },
+  { label: "Years of Learning", value: 1, icon: <FaBriefcase className="text-yellow-500" /> },
   { label: "Projects Completed", value: 30, icon: <FaProjectDiagram className="text-blue-500" /> },
-  { label: "Happy Clients", value: 15, icon: <FaSmile className="text-gray-500" /> },
-  { label: "Technologies Mastered", value: 10, icon: <FaCode className="text-purple-500" /> }
+  { label: "Assignments", value: 12, icon: <FaSmile className="text-gray-500" /> },
+  { label: "Core Technologies", value: 10, icon: <FaCode className="text-purple-500" /> }
 ];
+
 
 export default function Stats() {
   return (
