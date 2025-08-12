@@ -25,7 +25,7 @@ export default function AboutMe() {
       <img
         src="/images/abstract-christmas-tree.png"
         alt="Scribble Doodle"
-        className="absolute bottom-20 left-10 w-14 opacity-90 filter: brightness(2);
+        className="absolute bottom-20 left-10 w-14 opacity-20 filter: brightness(2);
  animate-floatSlow rotate-[20deg]"
         style={{ animationDelay: "2.5s" }}
       />
