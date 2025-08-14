@@ -9,49 +9,50 @@ export default function AboutMe() {
       id="AboutMe"
       className="relative max-w-6xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-12 overflow-visible"
     >
-      {/* images floating around About section */}
+      {/* Background overlay */}
+      <div className="absolute inset-0  dark:bg-gray-900/80 z-0"></div>
+
+      {/* Floating doodles */}
       <img
         src="/images/doodle-crown.svg"
         alt="Doodle Crown"
-        className="absolute top-4 left-58 w-17 opacity-20 animate-floatSlow rotate-[10deg]"
+        className="absolute top-4 left-16 w-16 opacity-20 animate-floatSlow rotate-[10deg] z-0"
         style={{ animationDelay: "0s" }}
       />
       <img
         src="/images/star.png"
         alt="Star Doodle"
-        className="absolute top-24 right-12 w-12 opacity-50 animate-floatFast rotate-[-15deg]"
+        className="absolute top-24 right-12 w-12 opacity-50 animate-floatFast rotate-[-15deg] z-0"
         style={{ animationDelay: "1.2s" }}
       />
       <img
         src="/images/abstract-christmas-tree.png"
         alt="Scribble Doodle"
-        className="absolute bottom-20 left-10 w-14 opacity-20 filter: brightness(2);
- animate-floatSlow rotate-[20deg]"
+        className="absolute bottom-20 left-10 w-14 opacity-20 animate-floatSlow rotate-[20deg] z-0"
         style={{ animationDelay: "2.5s" }}
       />
       <img
         src="/images/beach.png"
         alt="Wave Doodle"
-        className="absolute bottom-12 right-20 w-16 opacity-60 animate-floatFast rotate-[-10deg]"
+        className="absolute bottom-12 right-20 w-16 opacity-60 animate-floatFast rotate-[-10deg] z-0"
         style={{ animationDelay: "3.7s" }}
       />
       <img
         src="/images/doodle-circle.svg"
         alt="Circle Doodle"
-        className="absolute top-1/2 left-1/2 w-20 opacity-40 animate-floatSlow rotate-[5deg] translate-x-[-50%] translate-y-[-50%]"
+        className="absolute top-1/2 left-1/2 w-20 opacity-40 animate-floatSlow rotate-[5deg] translate-x-[-50%] translate-y-[-50%] z-0"
         style={{ animationDelay: "4.5s" }}
       />
 
       {/* About Card */}
       <motion.div
-        className="relative w-[350px] max-w-full"
+        className="relative w-[350px] max-w-full z-10"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        {/* Main image */}
         <motion.img
-          src="/images/coding.jpg"
+          src="https://i.imghippo.com/files/Knky7423CjI.JPG"
           alt="Profile"
           className="rounded-lg shadow-lg object-cover w-full"
           whileHover={{ scale: 1.02 }}
@@ -60,14 +61,14 @@ export default function AboutMe() {
 
         {/* Green square top-left */}
         <motion.div
-          className="absolute -top-4 -left-4 w-15 h-15 bg-green-500"
+          className="absolute -top-4 -left-4 w-14 h-14 bg-green-500"
           animate={{ y: [0, -4, 0] }}
           transition={{ repeat: Infinity, duration: 2 }}
         ></motion.div>
 
         {/* Green square bottom-right */}
         <motion.div
-          className="absolute -bottom-4 -right-4 w-15 h-15 bg-green-500"
+          className="absolute -bottom-4 -right-4 w-14 h-14 bg-green-500"
           animate={{ y: [0, 4, 0] }}
           transition={{ repeat: Infinity, duration: 2 }}
         ></motion.div>
@@ -85,7 +86,7 @@ export default function AboutMe() {
         <motion.a
           href="/files/AhmedRahat_Resume.pdf"
           download
-          className="absolute -left-12 bottom-1/2 translate-y-1/2 rounded-full border-2 border-green-500 bg-white w-20 h-20 flex flex-col items-center justify-center text-green-500 font-semibold text-xs tracking-widest gap-1 hover:bg-green-500 hover:text-white transition-colors"
+          className="absolute -left-12 bottom-1/2 translate-y-1/2 rounded-full border-2 border-green-500 bg-white dark:bg-gray-900 w-20 h-20 flex flex-col items-center justify-center text-green-500 font-semibold text-xs tracking-widest gap-1 hover:bg-green-500 hover:text-white transition-colors"
           whileHover={{ rotate: 10, scale: 1.05 }}
         >
           <FaDownload className="text-lg" />
@@ -95,37 +96,39 @@ export default function AboutMe() {
 
       {/* About Text */}
       <div className="flex-1 relative z-10">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-3xl font-semibold text-gray-900 mb-8"
-        >
-          About Me
-        </motion.h2>
+  <motion.h2
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+  className="text-3xl font-semibold text-base-content mb-8"
+>
+  About Me
+</motion.h2>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4, duration: 1 }}
-          className="text-gray-700 leading-relaxed text-lg"
-        >
-          I am Ashik, a dedicated MERN stack developer with a strong foundation in
-          web development and a background in Business Administration from National
-          University Bangladesh.
-          <br />
-          <br />
-          I specialize in building efficient, scalable, and user-friendly web
-          applications using modern technologies such as React, Node.js, and
-          MongoDB. My approach combines technical expertise with business insights
-          to deliver solutions that align with client goals and enhance user
-          experience.
-          <br />
-          <br />
-          Continuously learning and adapting, I aim to contribute effectively in
-          professional environments, bringing both creativity and discipline to
-          every project.
-        </motion.p>
+<motion.p
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.4, duration: 1 }}
+  className="text-base-content leading-relaxed text-lg"
+>
+  I am Ashik, a dedicated MERN stack developer with a strong foundation in
+  web development and a background in Business Administration from National
+  University Bangladesh.
+  <br />
+  <br />
+  I specialize in building efficient, scalable, and user-friendly web
+  applications using modern technologies such as React, Node.js, and
+  MongoDB. My approach combines technical expertise with business insights
+  to deliver solutions that align with client goals and enhance user
+  experience.
+  <br />
+  <br />
+  Continuously learning and adapting, I aim to contribute effectively in
+  professional environments, bringing both creativity and discipline to
+  every project.
+</motion.p>
+
+
       </div>
 
       {/* Animations for floating images */}
@@ -150,5 +153,6 @@ export default function AboutMe() {
     </section>
   );
 }
+
 
 
