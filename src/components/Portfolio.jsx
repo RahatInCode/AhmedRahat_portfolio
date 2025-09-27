@@ -4,13 +4,13 @@ import { ExternalLink, Github, Rocket } from "lucide-react";
 
 const projects = [
   {
-    title: "Ranna Banna",
-    img: "/images/ranna banna.png",
-    live: "https://ranna-banna-93ff1.web.app",
-    github: "https://github.com/RahatInCode/ranna-banna-client-public.git",
+    title: "Rezoom-ai",
+    img: "/images/resume_builder.png",
+    live: "https://rezoom-ai-pi.vercel.app/",
+    github: "https://github.com/RahatInCode/rezoom-ai.git",
     description:
-      "Ranna Banna is a cooking recipe sharing platform where users can browse, upload, and save recipes. It features an intuitive interface, recipe categories, and search functionality for an enhanced culinary experience.",
-    stack: ["React", "Firebase", "Tailwind CSS"]
+      "Rezoom-ai is an AI-powered resume builder that helps users create professional resumes quickly and easily. It offers customizable templates, AI-driven content suggestions, and a user-friendly interface to craft standout resumes. Also user can create cover letter and give mock interview to crack their next Interview.",
+    stack: ["Next.js", "Firebase", "OpenAI"  ]
   },
   {
     title: "Medicamp",
