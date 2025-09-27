@@ -12,7 +12,7 @@ import Blog from './components/Blog';
 import Navbar from './components/layout/Navbar';
 import AboutMe from './components/layout/AboutMe';
 import Footer from './components/layout/Footer';
-import ProjectsAll from './components/ProjectsAll';
+// import ProjectsAll from './components/ProjectsAll';
 
 const App = () => {
     return (
@@ -22,7 +22,7 @@ const App = () => {
   <AboutMe />
   <Services />
   <Portfolio />
-  <ProjectsAll />
+  {/* <ProjectsAll /> */}
   <Stats />
   <Achievements />
   <ExperienceEducation />
