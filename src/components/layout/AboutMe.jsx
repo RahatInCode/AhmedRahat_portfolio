@@ -52,7 +52,7 @@ export default function AboutMe() {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <motion.img
-          src="https://i.imghippo.com/files/Knky7423CjI.JPG"
+          src="https://i.imghippo.com/files/Sema2386bYc.png"
           alt="Profile"
           className="rounded-lg shadow-lg object-cover w-full"
           whileHover={{ scale: 1.02 }}
