@@ -1,4 +1,5 @@
 import React from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
@@ -31,6 +32,7 @@ const App = () => {
   <Contact />
   <Blog />
   <Footer />
+  <SpeedInsights />
 </>
 
     );
